@@ -1,23 +1,65 @@
 .addticket{
-    table{
-        tr{
-            td{
-                span{
-                    position:absolute;
-                    top:90px;
-                    left:60px;
-                    h2{
-                        font-size:25px;
-                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                    }
-                    p{
-                        font-size:15px;
-                    }
-                }
-                img{
-                    width:45px;
-                }
-            }
+    display:none;
+    .add1{
+        margin-top:15px;
+        display:flex;
+        border-bottom:1px solid gray;
+        padding-bottom:30px;
+        img{
+            width:45px;
+            position:relative;
+            left:5px;
+        }
+        span{
+            margin-left:14px;
+        }
+        h3{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size:20px;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+        p{
+            font-size:13px;
+        }
+        .cost{
+            position:relative;
+            top:45px;
+            right:25px;
+            background-color:gray;
+            height:27px;
+            width:45px;
         }
     }
-}
+    .add2{
+        margin-top:15px;
+        display:flex;
+        border-bottom:1px solid gray;
+        padding-bottom:30px;
+        img{
+            width:43px;
+            position:relative;
+            left:5px;
+        }
+        span{
+            margin-left:14px;
+        }
+        h3{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size:18px;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+        p{
+            font-size:12px;
+        }
+        .cost{
+            position:relative;
+            top:45px;
+            right:25px;
+            background-color:gray;
+            height:27px;
+            width:45px;
+        }
+    }
+} 

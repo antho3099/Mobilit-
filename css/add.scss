@@ -1,0 +1,38 @@
+.buy{
+    display:flex;
+    margin-left:95px;
+    .low{
+        position: relative;
+    }
+    .count{
+        p{
+            position:relative;
+            left:30px;
+            font-size:25px;
+        }
+    }
+    .more{
+        position: relative;
+        left:38px;
+        top:2px;
+    }
+}
+.buy2{
+    display:flex;
+    margin-left:23px;
+    .low{
+        position: relative;
+    }
+    .count{
+        p{
+            position:relative;
+            left:30px;
+            font-size:25px;
+        }
+    }
+    .more{
+        position: relative;
+        left:38px;
+        top:2px;
+    }
+}
