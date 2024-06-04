@@ -181,40 +181,20 @@ footer nav ul li a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.buy {
-  display: flex;
-  margin-left: 5px;
-  margin-top: 15px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid gray;
+.addticket table tr td span {
+  position: absolute;
+  top: 90px;
+  left: 60px;
 }
-.buy img {
-  width: 45px;
-}
-.buy span {
-  margin-left: 5px;
-  margin-top: 6px;
-}
-.buy span h2 {
-  font-size: 18px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-.buy span p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  text-align: start;
-  font-weight: 100;
-}
-.buy .count {
-  position: relative;
-  left: 25px;
+.addticket table tr td span h2 {
   font-size: 25px;
-  top: 12px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.buy .cost h3 {
-  background-color: gray;
-  position: relative;
-  top: 45px;
-  right: 35px;
+.addticket table tr td span p {
+  font-size: 15px;
+}
+.addticket table tr td img {
+  width: 45px;
 }
 
 .low {
@@ -232,6 +212,33 @@ footer nav ul li a {
   position: absolute;
   top: 13px;
   left: 5px;
+}
+
+.more {
+  background-color: orangered;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: relative;
+  left: 35px;
+  top: 10px;
+}
+.more .more1 {
+  width: 17px;
+  border: 2px solid white;
+  background-color: white;
+  position: relative;
+  top: 14px;
+  left: 4px;
+}
+.more .more2 {
+  width: 17px;
+  border: 2px solid white;
+  background-color: white;
+  position: absolute;
+  top: 14px;
+  left: 5px;
+  transform: rotate(90deg);
 }
 
 * {

@@ -1,0 +1,26 @@
+.more{
+    background-color: orangered;
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    position:relative;
+    left:35px;
+    top:10px;
+    .more1{
+        width:17px;
+        border:2px solid white;
+        background-color: white;
+        position:relative;
+        top:14px;
+        left:4px;
+    }
+    .more2{
+        width:17px;
+        border:2px solid white;
+        background-color: white;
+        position:absolute;
+        top:14px;
+        left:5px;
+        transform:rotate(90deg);
+    }
+}
