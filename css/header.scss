@@ -1,0 +1,44 @@
+header{
+    background: rgb(255,44,0);
+    background: linear-gradient(266deg, rgba(255,44,0,1) 60%, rgba(255,138,39,1) 100%) no-repeat; 
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    padding:20px;
+    h1{
+        font-size:25px;
+        font-weight: 100;
+    }
+    .menu{
+        position:relative;
+        top:2px;
+        .rond1{
+            border:1px solid white;
+            width:5px;
+            height:5px;
+            border-radius:100%;
+            background-color:white;
+            position:relative;
+        }
+        .rond2{
+            border:1px solid white;
+            width:5px;
+            height:5px;
+            border-radius:100%;
+            background-color:white;
+            position:relative;
+            top:2px;
+        }
+        .rond3{
+            border:1px solid white;
+            width:5px;
+            height:5px;
+            border-radius:100%;
+            background-color:white;
+            position:relative;
+            top:4px;
+            bottom:15px;
+        }
+    }
+}

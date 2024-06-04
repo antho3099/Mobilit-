@@ -1,0 +1,13 @@
+.firstscreen{
+    display:block;
+    margin:auto;
+    width:230px;
+    position:relative;
+    top:300px;
+}
+footer .footerimg{
+    display:block;
+    margin:auto;
+    position:relative;
+    top:550px;
+}
