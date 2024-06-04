@@ -5,17 +5,18 @@ header {
   justify-content: space-between;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: white;
-  padding: 20px;
+  padding: 30px;
 }
-header h1 {
+header .headerone h1 {
   font-size: 25px;
   font-weight: 100;
 }
-header .menu {
-  position: relative;
-  top: 2px;
+header .headerone .menu {
+  position: absolute;
+  top: 28px;
+  left: 400px;
 }
-header .menu .rond1 {
+header .headerone .menu .rond1 {
   border: 1px solid white;
   width: 5px;
   height: 5px;
@@ -23,7 +24,7 @@ header .menu .rond1 {
   background-color: white;
   position: relative;
 }
-header .menu .rond2 {
+header .headerone .menu .rond2 {
   border: 1px solid white;
   width: 5px;
   height: 5px;
@@ -32,7 +33,54 @@ header .menu .rond2 {
   position: relative;
   top: 2px;
 }
-header .menu .rond3 {
+header .headerone .menu .rond3 {
+  border: 1px solid white;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: white;
+  position: relative;
+  top: 4px;
+  bottom: 15px;
+}
+
+.headertwo {
+  display: none;
+}
+.headertwo .croix {
+  position: absolute;
+  left: 22px;
+  top: 35px;
+}
+.headertwo h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 150px;
+}
+.headertwo .menu {
+  position: absolute;
+  top: 28px;
+  left: 400px;
+}
+.headertwo .menu .rond1 {
+  border: 1px solid white;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: white;
+  position: relative;
+}
+.headertwo .menu .rond2 {
+  border: 1px solid white;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: white;
+  position: relative;
+  top: 2px;
+}
+.headertwo .menu .rond3 {
   border: 1px solid white;
   width: 5px;
   height: 5px;
@@ -47,7 +95,7 @@ footer {
   background-color: white;
   border-top: 1px solid gray;
   position: relative;
-  top: 142px;
+  top: 520px;
 }
 footer nav ul {
   display: flex;
@@ -64,6 +112,126 @@ footer nav ul li a {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: gray;
+}
+
+.croix {
+  position: absolute;
+  left: 22px;
+  top: 25px;
+}
+.croix .croix1 {
+  border: 2px solid white;
+  width: 25px;
+  background-color: white;
+  transform: rotate(50deg);
+  position: relative;
+  top: 3px;
+}
+.croix .croix2 {
+  border: 2px solid white;
+  width: 25px;
+  background-color: white;
+  transform: rotate(130deg);
+  position: absolute;
+}
+
+.headerforbuy {
+  display: none;
+}
+.headerforbuy .twospans span {
+  position: relative;
+  right: 15px;
+}
+.headerforbuy .twospans h3 {
+  position: absolute;
+  top: 30px;
+  font-weight: 100;
+}
+.headerforbuy h2 {
+  position: absolute;
+  top: 25px;
+  left: 170px;
+}
+
+.card {
+  display: none;
+}
+.card h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-left: 2px;
+}
+.card img {
+  border: 1px solid black;
+  width: 295px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 5px;
+  border-radius: 8px;
+}
+.card h4 {
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.card p {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.buy {
+  display: flex;
+  margin-left: 5px;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+.buy img {
+  width: 45px;
+}
+.buy span {
+  margin-left: 5px;
+  margin-top: 6px;
+}
+.buy span h2 {
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.buy span p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: start;
+  font-weight: 100;
+}
+.buy .count {
+  position: relative;
+  left: 25px;
+  font-size: 25px;
+  top: 12px;
+}
+.buy .cost h3 {
+  background-color: gray;
+  position: relative;
+  top: 45px;
+  right: 35px;
+}
+
+.low {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: relative;
+  left: 20px;
+}
+.low .small {
+  border: 2px solid black;
+  width: 15px;
+  background-color: black;
+  position: absolute;
+  top: 13px;
+  left: 5px;
 }
 
 * {

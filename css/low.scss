@@ -1,0 +1,16 @@
+.low{
+    border:1px solid black;
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    position:relative;
+    left: 20px;
+    .small{
+        border:2px solid black;
+        width:15px;
+        background-color: black;
+        position:absolute;
+        top:13px;
+        left:5px;
+        }
+    }

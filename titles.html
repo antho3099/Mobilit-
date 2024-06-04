@@ -5,18 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Métropole Marseille</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <!--On Crée plusieurs headers-->
     <header>
-        <h1>Mes Titres</h1>
-        <!--On va créer un menu a base de div pour remplacer une image afin qu'elle fasse office de menu -->
-        <div class="menu">
-            <div class="rond1"></div>
-            <div class="rond2"></div>
-            <div class="rond3"></div>
+        <div class="headerone">
+            <h1>Mes Titres</h1>
+            <!--On va créer un menu a base de div pour remplacer une image afin qu'elle fasse office de menu -->
+            <div class="menu">
+                <div class="rond1"></div>
+                <div class="rond2"></div>
+                <div class="rond3"></div>
+        </div>
+       </div>
+        <!--On va créer un autre header qui sera loin du compte-->
+        <div class="headertwo">
+            <div class="croix">
+                <div class="croix1"></div>
+                <div class="croix2"></div>
+            </div>
+            <h2>Acheter</h2>
+            <div class="menu">
+                <div class="rond1"></div>
+                <div class="rond2"></div>
+                <div class="rond3"></div>
+        </div>
+        </div>
+        <!--Un autre header pour les achats-->
+        <div class="headerforbuy">
+            <!--Mettre une div pour séparer le h1 (on fera un return après)-->
+            <div class="twospans">
+                <span class="material-symbols-outlined">arrow_back_ios</span>
+                <h3>Acheter</h3>
+            </div>
+            <h2>Paiement</h2>
         </div>
     </header>
+    <!--La suite, on affiche la carte avec une div-->
+    <div class="card">
+        <h3>SUR MON TELEPHONE</h3>
+        <img src="" alt="">
+        <h4>1 voyage Aix-Bus</h4>
+        <p>1 ticket disponible</p>
+    </div>
+    <!--Achats-->
+    <div class="buy">
+        <img src="img/ticket.avif" alt="">
+        <span>
+            <h2>1 VOYAGE AIX EN BUS</h2>
+            <p>Valabe 60 minutes</p>
+        </span>
+        <!--On crée le moins -->
+        <div class="low">
+            <div class="small"></div>
+        </div>
+        <!-- + le compteur-->
+        <div class="count"></div>
+    </div>
     <!--On fait le footer qui sera une nav-->
     <footer>
         <nav>
@@ -24,8 +70,8 @@
                 <li><a href=""><img src="img/home.avif" alt="">Accueil</a></li>
                 <li><a href=""><img src="img/clock.avif" alt="">Horaires</a></li>
                 <li><a href=""><img src="img/ticket.avif" alt="">Mes titres</a></li>
-                <li><a href=""><img src="" alt="">Infos Trafic</a></li>
-                <li><a href=""><img src="" alt="">Menu</a></li>
+                <li><a href=""><img src="img/trafic.avif" alt="">Infos Trafic</a></li>
+                <li><a href=""><img src="img/menu.avif" alt="">Menu</a></li>
             </ul>
         </nav>
     </footer>

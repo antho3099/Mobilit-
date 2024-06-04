@@ -1,0 +1,27 @@
+.card{
+    display:none;
+    h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left:2px;
+    }
+    img{
+        border:1px solid black;
+        width:295px;
+        display:block;
+        margin: auto;
+        position: relative;
+        top:5px;
+        border-radius:8px;
+    }
+    h4{
+        text-align:center;
+        margin-top:5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        font-size:20px;
+    }
+    p{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}

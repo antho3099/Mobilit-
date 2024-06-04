@@ -1,0 +1,20 @@
+.croix{
+    position:absolute;
+    left:22px;
+    top:25px;
+    .croix1{
+        border:2px solid white;
+        width: 25px;
+        background-color: white;
+        transform:rotate(50deg);
+        position:relative;
+        top:3px;
+    }
+    .croix2{
+        border:2px solid white;
+        width: 25px;
+        background-color: white;
+        transform:rotate(130deg);
+        position:absolute;
+    }
+}

@@ -1,15 +1,15 @@
-header{
-    background: rgb(255,44,0);
-    background: linear-gradient(266deg, rgba(255,44,0,1) 60%, rgba(255,138,39,1) 100%) no-repeat; 
-    display:flex;
-    justify-content: space-between;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:white;
-    padding:30px;
-    .headerone{
-        h1{
-        font-size:25px;
-        font-weight: 100;
+.headertwo{
+    display:none;
+    .croix{
+        position:absolute;
+        left:22px;
+        top:35px;
+    }
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:20px;
+        text-align: center;
+        margin-left:150px;
     }
     .menu{
         position:absolute;
@@ -43,6 +43,4 @@ header{
             bottom:15px;
         }
     }
-    }
-    
 }
