@@ -5,9 +5,9 @@
         position: relative;
     }
     .count{
-        p{
+        #number{
             position:relative;
-            left:30px;
+            left:25px;
             font-size:25px;
         }
     }
@@ -24,15 +24,15 @@
         position: relative;
     }
     .count{
-        p{
+        #number{
             position:relative;
-            left:30px;
+            left:25px;
             font-size:25px;
         }
+       }
     }
     .more{
         position: relative;
         left:38px;
         top:2px;
     }
-}

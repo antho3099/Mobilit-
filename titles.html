@@ -6,7 +6,11 @@
     <title>La Métropole Marseille</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="js/shop.js" defer></script>
+    <script src="js/payform.js" defer></script>
     <script src="js/buy.js" defer></script>
 </head>
 <body>
@@ -43,6 +47,12 @@
             </div>
             <h2>Paiement</h2>
         </div>
+        <!--Header pour mettre sa carte-->
+        <div class="headercard">
+                <span class="material-symbols-outlined">arrow_back_ios</span>
+            <h2>Paiement</h2>
+        </div>
+        </div>
     </header>
 
 
@@ -68,7 +78,7 @@
                     <div class="small"></div>
                 </div>
                 <div class="count">
-                    <span> 0 </span>
+                    <span id="number"> 0 </span>
                 </div>
                 <div class="more">
                     <div class="more1"></div>
@@ -92,7 +102,7 @@
                     <div class="small"></div>
                 </div>
                 <div class="count">
-                    <p> 0 </p>
+                    <span id="number">0</span>
                 </div>
                 <div class="more">
                     <div class="more1"></div>
@@ -105,12 +115,77 @@
         </div>
     </div> 
         <button id="letbuy">Acheter</button>
+
+
+    <!--La facture-->
+    <div class="bills">
+        <!--Bills veut dire facture en anglais-->
+        <div class="bill">
+            <p>Total de la commande:  <span></span>€</p>
+        </div>
+        <div class="minbill">
+            <p></p>
+        </div>
+        <form action="titles.html">
+            <input type="checkbox">
+            <label for="">J'ai lu et j'accepte les conditions générales de vente </label>
+        </form>
+    </div>
+    <button id="paid">Payer</button>
     <!--Si on a pas de carte-->
     <div class="none">
         <p class="nope">Aucun titre à utiliser. </p>
         <p>Vous pouvez acheter des titres pour voyager sur le réseau</p>   
     </div> 
     <button class="letadd">Acheter des titres</button>
+
+    <!--On fait le formulaire de paiement-->
+    <div class="creditcard">
+        <img src="/img/metropole_logo.avif" alt="">
+        <div class="language">
+            <h3>FR</h3>
+        </div>
+        <div class="menulanguage">
+            <ul>
+                <li>Français</li>
+                <li>Anglais</li>
+                <li>Italien</li>
+                <li>Espagnol</li>
+            </ul>
+        </div>
+        <div class="money">
+            <span class="material-symbols-outlined">chevron_forward</span>
+            <h3>Montant <span>0</span>€</h3>
+        </div>
+        <form action="" method="get">
+            <label for="cardnumber">Numéro de Carte</label> <br>
+            <input type="text" id="cardnumber" name="cardnumber">
+            <span class="material-symbols-outlined">credit_card</span>
+            <span class="material-symbols-outlined">help</span> <br>
+            <label for="date">Expire fin</label> <br>
+            <input type="number" id="date" name="month" placeholder="mois">
+            <input type="number" id="date" name="year" placeholder="Année"> <br>
+            <label for="crypto">Cryptogramme </label><br>
+            <input type="text" id="crypto" name="crypto">
+            <span class="material-symbols-outlined">help</span> <br>
+            <input type="submit" value="Valider" id="valider" name="valider">
+            <div class="cardlist">
+                <ul>
+                    <li><img src="img/visa.avif" alt=""></li>
+                    <li><img src="img/paiementsecurise.avif" alt=""></li>
+                    <li><img src="img/mastercard.avif" alt=""></li>
+                </ul>
+        </div>
+        </form>
+        <p id="return">Annuler et retourner à la boutique</p>
+        <div class="pay">
+            <ul>
+                <li><img src="img/payzen.avif" alt=""></li>
+                <li><img src="img/pcjdss.avif" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
     <!--On fait le footer qui sera une nav-->
     <footer>
         <nav>

@@ -6,6 +6,7 @@ let stop = document.querySelector(".croix");
 let notice = document.querySelector(".none");
 let header1 = document.querySelector(".headerone");
 let buy = document.querySelector("#letbuy")
+let lot = document.querySelector('.total');
 
 function goShop(){
     header2.style.display = "block";
@@ -15,6 +16,7 @@ function goShop(){
     header1.style.display = "none";
     shop.style.display = "none";
     buy.style.display = "block"
+    lot.style
 }
 shop.addEventListener('click', goShop);
 
@@ -28,3 +30,4 @@ function back(){
     buy.style.display = "none"
 }
 stop.addEventListener('click', back);
+

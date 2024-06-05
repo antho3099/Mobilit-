@@ -299,9 +299,9 @@ footer nav ul li a {
 .buy .low {
   position: relative;
 }
-.buy .count p {
+.buy .count #number {
   position: relative;
-  left: 30px;
+  left: 25px;
   font-size: 25px;
 }
 .buy .more {
@@ -317,12 +317,13 @@ footer nav ul li a {
 .buy2 .low {
   position: relative;
 }
-.buy2 .count p {
+.buy2 .count #number {
   position: relative;
-  left: 30px;
+  left: 25px;
   font-size: 25px;
 }
-.buy2 .more {
+
+.more {
   position: relative;
   left: 38px;
   top: 2px;
@@ -336,8 +337,19 @@ footer nav ul li a {
   margin: auto;
   position: absolute;
   bottom: 0;
-  left: 85px;
+  left: 95px;
   display: none;
+}
+
+.total {
+  text-align: end;
+  position: relative;
+  top: 530px;
+  right: 100px;
+}
+.total p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
 }
 
 .none .nope {
@@ -363,6 +375,185 @@ footer nav ul li a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   border-radius: 6px;
   font-size: 17px;
+}
+
+.headercard {
+  display: none;
+}
+.headercard span {
+  position: absolute;
+}
+.headercard h2 {
+  position: relative;
+  left: 130px;
+}
+
+.creditcard {
+  display: none;
+}
+.creditcard img {
+  width: 152px;
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+.creditcard .language {
+  position: absolute;
+  top: 100px;
+  left: 320px;
+}
+.creditcard .language h3 {
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+.creditcard .menulanguage {
+  text-align: center;
+}
+.creditcard .menulanguage ul li {
+  position: relative;
+  background-color: black;
+  color: white;
+  width: 90px;
+  margin-left: 310px;
+  list-style: none;
+  display: none;
+}
+.creditcard form {
+  display: none;
+  background-color: white;
+  margin-top: 7px;
+}
+.creditcard form label {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: gray;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.creditcard form input {
+  margin-left: 5px;
+  height: 25px;
+  width: 200px;
+  border-radius: 4px;
+  border-color: 1px solid gray;
+  margin-bottom: 15px;
+}
+.creditcard form .material-symbols-outlined {
+  position: relative;
+  top: 6px;
+}
+.creditcard form #date {
+  width: 109px;
+}
+.creditcard form #crypto {
+  width: 95px;
+  height: 28px;
+}
+.creditcard form #valider {
+  display: block;
+  margin: auto;
+  height: 45px;
+  color: white;
+  background-color: dodgerblue;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.creditcard .display {
+  display: block;
+}
+.creditcard #return {
+  margin-top: 72px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 25px;
+  text-align: end;
+  margin-right: 5px;
+}
+.creditcard .pay ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.creditcard .pay ul li {
+  list-style: none;
+}
+.creditcard .pay ul li img {
+  width: 210px;
+}
+
+.money {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+.money .material-symbols-outlined {
+  position: absolute;
+  top: 190px;
+  left: 65px;
+  width: 25px;
+}
+.money h3 {
+  color: gray;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.cardlist ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cardlist ul li {
+  list-style: none;
+}
+.cardlist ul li img {
+  width: 140px;
+}
+
+.bills {
+  display: none;
+}
+.bills .bill {
+  font-weight: 200;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  border-bottom: 2px dotted gray;
+}
+.bills .bill p {
+  margin-left: 15px;
+}
+.bills .minbill {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.bills .minbill p {
+  margin-left: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.bills form {
+  margin-top: 55px;
+  font-size: 14px;
+  margin-left: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#paid {
+  position: relative;
+  top: 95px;
+  display: block;
+  margin: auto;
+  background-color: rgb(255, 163, 129);
+  width: 280px;
+  height: 40px;
+  border-radius: 6px;
+  display: none;
 }
 
 * {

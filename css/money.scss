@@ -1,0 +1,31 @@
+.money{
+    background-color:white;
+    padding:10px;
+    margin-top:10px;
+    .material-symbols-outlined{
+        position:absolute;
+        top:190px;
+        left:65px;
+        width:25px;
+    }
+    h3{
+        color:gray;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:25px;
+        text-align: center;
+    }
+}
+.cardlist{
+    ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        li{
+            list-style:none;
+            
+            img{
+                width:140px;
+            }
+        }
+    }
+}

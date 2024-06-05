@@ -1,0 +1,30 @@
+.bills{
+    display:none;
+    .bill{
+        font-weight: 200;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:25px;
+        margin-top:10px;
+        padding-bottom:30px;
+        border-bottom: 2px dotted gray;
+        p{
+            margin-left:15px;
+        }
+    }
+    .minbill{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:25px;
+        margin-top:10px;
+        padding-bottom:30px;
+        p{
+            margin-left:15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    }
+    form{
+        margin-top:55px;
+        font-size:14px;
+        margin-left:25px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}

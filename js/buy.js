@@ -1,11 +1,26 @@
-let score = document.querySelectorAll(".count span");
-let full = document.querySelectorAll(".more");
-let less = document.querySelectorAll(".low"); 
+let btnMore = document.querySelectorAll(".more");
+let btnLess = document.querySelectorAll(".low");
+let count = document.querySelector("#number")
+let result = (count.innerText);
 let incrementation = 0;
-console.log(score);
+let bought = document.querySelector("#letbuy")
 
-full.addEventListener('click', function(){
-    score.innerText= ++incrementation;
-});
+
+for(let m of btnMore){
+    if(incrementation == 0){
+
+    }
+    m.addEventListener('click', function(){
+        result = ++incrementation ;
+        count.innerText = result;
+    })
+};
+for(let l of btnLess){
+    l.addEventListener('click', function(){
+        result = --incrementation;
+        count.innerHTML = result;
+    })
+}
+
 
 
