@@ -94,8 +94,9 @@ header .headerone .menu .rond3 {
 footer {
   background-color: white;
   border-top: 1px solid gray;
-  position: relative;
-  top: 350px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 footer nav ul {
   display: flex;
@@ -210,10 +211,10 @@ footer nav ul li a {
 .addticket .add1 .cost {
   position: relative;
   top: 45px;
-  right: 25px;
+  right: 35px;
   background-color: gray;
-  height: 27px;
-  width: 45px;
+  height: 25px;
+  width: 60px;
 }
 .addticket .add2 {
   margin-top: 15px;
@@ -241,10 +242,10 @@ footer nav ul li a {
 .addticket .add2 .cost {
   position: relative;
   top: 45px;
-  right: 25px;
+  right: 35px;
   background-color: gray;
   height: 27px;
-  width: 45px;
+  width: 60px;
 }
 
 .low {
@@ -334,8 +335,8 @@ footer nav ul li a {
   display: block;
   margin: auto;
   position: absolute;
-  top: 800px;
-  left: 90px;
+  bottom: 0;
+  left: 85px;
   display: none;
 }
 

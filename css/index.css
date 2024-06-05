@@ -1,10 +1,11 @@
-img{
+.metropole{
     display:block;
     margin:auto;
     justify-content:center;
     align-items: center;
 }
-footer .footerimg{
+footer img{
     position:absolute;
     bottom:0;
+    left:100px;
 }
