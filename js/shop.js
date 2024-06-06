@@ -15,7 +15,6 @@ function goShop(){
     notice.style.display = "none";
     header1.style.display = "none";
     shop.style.display = "none";
-    lot.style
 }
 shop.addEventListener('click', goShop);
 

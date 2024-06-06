@@ -1,9 +1,8 @@
 let bow = document.querySelector(".money span");
-let form = document.querySelector("form");
+let billreturn
 
 function menuofcard(){
-
     bow.style.transform = "rotate(0.2turn)";
-    form.classList.toggle("display"); 
+    payform.classList.toggle("display"); 
 }  
 bow.addEventListener("click", menuofcard);
