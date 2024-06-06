@@ -1,0 +1,71 @@
+.help{
+    background-color:white;
+    position:fixed;
+    width:285px;
+    height:145px;
+    border:1px solid black;
+    left:130px;
+    top:130px;
+    display:none;
+    .croix{
+        position:relative;
+        left:260px;
+        top:8px;
+        .croix1{
+            border:2px solid black;
+            background-color:black;
+            width:17px;
+
+        }
+        .croix2{
+            border:2px solid black;
+            background-color:black;
+            width:17px;
+        }
+    }
+    p{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: justify;
+        font-size: 14px;
+        margin-top: 26px;
+        margin-left:5px;
+        margin-right:5px;
+    }
+}
+.helptwo{
+    background-color:white;
+    position:fixed;
+    width:285px;
+    height:210px;
+    border:1px solid black;
+    left:130px;
+    top:460px;
+    display:none;
+    .croix{
+        position:relative;
+        left:260px;
+        top:8px;
+        .croix1{
+            border:1px solid black;
+            background-color:black;
+            width:17px;
+
+        }
+        .croix2{
+            border:1px solid black;
+            background-color:black;
+            width:17px;
+        }
+    }
+    p{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: justify;
+        font-size: 14px;
+        margin-top: 26px;
+        margin-left:5px;
+        margin-right:5px;
+    }
+    img{
+        width:155px;
+    }
+}

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="js/shop.js" defer></script>
     <script src="js/payform.js" defer></script>
-    <script src="js/buy.js" defer></script>
+    <script src="js/buy2.js" defer></script>
     <script src="js/check.js" defer></script>
 </head>
 <body>
@@ -70,7 +70,7 @@
         <!--Créer une offre-->
         <div class="add1">
             <img src="img/ticket.avif" alt="">
-            <span>
+            <span id="info1">
                 <h3>1 voyage Aix</h3>
                 <p>Valable 60 minutes</p>
             </span>
@@ -92,7 +92,7 @@
         </div>
         <div class="add2">
             <img src="img/ticket.avif" alt="">
-            <span>
+            <span id="info2">
                 <h3>10 voyages Aix</h3>
                 <p>Valable 60 minutes sur Aix en Bus. <br>
                     Multi-validable
@@ -115,17 +115,21 @@
             </div>
         </div>
     </div> 
-        <button id="letbuy">Acheter</button>
+    <div class="cash">
+        <p>Total: <span id="cashone"></span>€</p>
+        <button id="letbuy">Acheter <span id=""></span></button>
+    </div>
+    
 
 
     <!--La facture-->
     <div class="bills">
         <!--Bills veut dire facture en anglais-->
         <div class="bill">
-            <p>Total de la commande:  <span>0</span>€</p>
+            <p>Total de la commande: <span id="rich"></span>€</p>
         </div>
         <div class="minbill">
-            <p></p>
+            <p><span id="inforesult"></span></p>
         </div>
         <form action="titles.html">
             <input type="checkbox" id="checkbox" name="checkbox">
@@ -148,27 +152,27 @@
         </div>
         <div class="menulanguage">
             <ul>
-                <li>Français</li>
-                <li>Anglais</li>
-                <li>Italien</li>
-                <li>Espagnol</li>
+                <li id="french">Français</li>
+                <li id="english">Anglais</li>
+                <li id="italy">Italien</li>
+                <li id="spain">Espagnol</li>
             </ul>
         </div>
         <div class="money">
             <span class="material-symbols-outlined">chevron_forward</span>
-            <h3>Montant <span>0</span>€</h3>
+            <h3>Montant <span id="gold">0</span>€</h3>
         </div>
         <form action="titles.html" method="get">
             <label for="cardnumber">Numéro de Carte</label> <br>
-            <input type="text" id="cardnumber" name="cardnumber">
+            <input type="text" id="cardnumber" name="cardnumber" required>
             <span class="material-symbols-outlined">credit_card</span>
-            <span class="material-symbols-outlined">help</span> <br>
+            <span id="help" class="material-symbols-outlined">help</span> <br>
             <label for="date">Expire fin</label> <br>
             <input type="number" id="date" name="month" placeholder="mois">
             <input type="number" id="date" name="year" placeholder="Année"> <br>
             <label for="crypto">Cryptogramme </label><br>
             <input type="text" id="crypto" name="crypto">
-            <span class="material-symbols-outlined">help</span> <br>
+            <span id="help2" class="material-symbols-outlined">help</span> <br>
             <input type="submit" value="Valider" id="valider" name="valider">
             <div class="cardlist">
                 <ul>
@@ -186,16 +190,40 @@
             </ul>
         </div>
     </div>
+    <div class="help">
+        <div class="croix">
+            <div class="croix1"></div>
+            <div class="croix2"></div>
+        </div>
+        <p>Une fois que le numéro correctement renseigné, la marque de votre carte bancaire apparaîtra. <br>  Si votre carte contient plusieurs marques, une marque apparaitra par défaut et vous pourrez facilement modifier
+        ce choix en cliquant sur la flèche.</p>
+    </div>
+    <div class="helptwo">
+        <div class="croix">
+            <div class="croix1"></div>
+            <div class="croix2"></div>
+        </div>
+        <p>Ce champ est obligatoire uniquement pour les moyens de paiement possèdant un cryptogramme visuel. <br> Ce cryptogramme visuel de la carte correspond au code 3 chiffres présent 
+        au verso de votre carte, à remplir dans la zone de signature</p>
+        <img src="img/cardcrypto.webp" alt="">
+    </div>
 
+    <!--Si le paiement est accepté-->
+    <div class="accepted">
+        <img src="img/accepted.avif" alt="">
+        <h5>Paiement Accepté</h5>
+        <p>Retrouvez vos titres dans votre compte et utilisez-les pour voyager facilement</p>
+    </div>
+    <button id="close">Fermer</button>
     <!--On fait le footer qui sera une nav-->
     <footer>
         <nav>
             <ul>
-                <li><a href=""><img src="img/home.avif" alt="">Accueil</a></li>
-                <li><a href=""><img src="img/clock.avif" alt="">Horaires</a></li>
-                <li><a href=""><img src="img/ticket.avif" alt="">Mes titres</a></li>
-                <li><a href=""><img src="img/trafic.avif" alt="">Infos Trafic</a></li>
-                <li><a href=""><img src="img/menu.avif" alt="">Menu</a></li>
+                <li><a href="#"><img src="img/home.avif" alt="">Accueil</a></li>
+                <li><a href="#"><img src="img/clock.avif" alt="">Horaires</a></li>
+                <li><a href="#"><img src="img/ticket.avif" alt="">Mes titres</a></li>
+                <li><a href="#"><img src="img/trafic.avif" alt="">Infos Trafic</a></li>
+                <li><a href="#"><img src="img/menu.avif" alt="">Menu</a></li>
             </ul>
         </nav>
     </footer>

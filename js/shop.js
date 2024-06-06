@@ -7,6 +7,7 @@ let notice = document.querySelector(".none");
 let header1 = document.querySelector(".headerone");
 let buy = document.querySelector("#letbuy")
 let lot = document.querySelector('.total');
+let total = document.querySelector("#lot")
 
 function goShop(){
     header2.style.display = "block";

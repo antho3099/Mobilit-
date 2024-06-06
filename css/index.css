@@ -3,6 +3,8 @@
     margin:auto;
     justify-content:center;
     align-items: center;
+    position:relative;
+    top:330px;
 }
 footer img{
     position:absolute;

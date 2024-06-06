@@ -1,0 +1,20 @@
+.cash{
+    background-color:white;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    display:none;
+    p{
+        text-align: end;
+        margin-right:30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-bottom:45px;
+        font-size:20px;
+        font-weight:200px;
+        margin-top:20px;
+    }
+    #letbuy{
+        position:relative;
+        left:10px;
+    }
+}

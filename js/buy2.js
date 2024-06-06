@@ -1,6 +1,9 @@
-let btnMore = document.querySelectorAll(".more");
-let btnLess = document.querySelectorAll(".low");
+let btnMore = document.querySelector(".add1 .more");
+let btnMore2 = document.querySelector(".add2 .more");
+let btnLess = document.querySelector(".add1 .low");
+let btnLess2 = document.querySelector(".add2 .low");
 let count = document.querySelector("#number")
+let count2 = document.querySelector(".add2 #number")
 let result = (count.innerText);
 let incrementation = 0;
 let bought = document.querySelector("#letbuy")
@@ -18,29 +21,42 @@ let rich = document.querySelector("#rich")
 let oppay = document.querySelector(".cash")
 let mont = document.querySelector("#gold")
 
-for(let m of btnMore){
-    m.addEventListener('click', function(){
-        result = ++incrementation ;
-        count.innerText = result;
-        bought.style.display = "block";
-        let total = incrementation * cost;
-        moneylot = total;
-        cash.innerText = moneylot;
-        oppay.style.display = 'block';
-
-    })
-};
-for(let l of btnLess){
-    l.addEventListener('click', function(){
-        result = --incrementation;
+btnMore.addEventListener('click', function(){
+    result = ++incrementation ;
+    count.innerText = result;
+    bought.style.display = "block";
+    let total = incrementation * cost;
+    moneylot = total;
+    cash.innerText = moneylot;
+    oppay.style.display = 'block';
+})
+btnLess.addEventListener('click', function(){
+    result = --incrementation;
         count.innerHTML = result;
         bought.style.display = "none";
         let total = incrementation * cost;
         moneylot = total;
         cash.innerText = moneylot;
-    })
-}
-
+        oppay.style.display = "none";
+})
+btnMore2.addEventListener('click', function(){
+    result = ++incrementation ;
+    count2.innerText = result;
+    bought.style.display = "block";
+    let total = incrementation * tencost;
+    moneylot = total;
+    cash.innerText = moneylot;
+    oppay.style.display = 'block';
+})
+btnLess2.addEventListener('click', function(){
+    result = --incrementation;
+    count2.innerHTML = result;
+    bought.style.display = "none";
+    let total = incrementation * tencost;
+    moneylot = total;
+    cash.innerText = moneylot;
+    oppay.style.display = "none";
+})
 bought.addEventListener('click', function(){
     shopping.style.display = "none";
     bills.style.display = "block";
@@ -50,9 +66,7 @@ bought.addEventListener('click', function(){
     paid.style.display = "block";
     rich.innerText = moneylot;
     oppay.style.display = "none";
-    gold.innerText = moneylot;
-    
-   
+    gold.innerText = moneylot; 
 
 })
 backup.addEventListener('click', function(){

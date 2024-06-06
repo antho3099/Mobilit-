@@ -6,6 +6,7 @@ let payform = document.querySelector(".creditcard form");
 
 //On vérifie que la case est coché 
 function verification(){
+
     //Si la case est coché 
     if(check.checked){
         //Le fond change et on déclenche l'évènement d'un bouton.
@@ -16,7 +17,6 @@ function verification(){
             payment.style.display = "block";
             check.style.display = "none"; 
             paid.style.display = "none";
-            payform.style.display = "block";
             bills.style.display = "none"
         })
     }
