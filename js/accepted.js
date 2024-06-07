@@ -9,4 +9,5 @@ getReturn.addEventListener('click', function(){
     off.style.display = "none";
     header3.style.display = "none";
     cardfile.style.display = "block";
+    footer.style.display = "block";
 })
