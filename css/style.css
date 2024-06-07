@@ -336,6 +336,10 @@ footer nav ul li a {
   top: 2px;
 }
 
+#valider {
+  text-align: center;
+}
+
 #letbuy {
   background-color: rgba(255, 60, 0, 0.945);
   width: 245px;
@@ -427,6 +431,9 @@ footer nav ul li a {
   list-style: none;
   display: none;
 }
+.creditcard .menulanguage .display {
+  display: block;
+}
 .creditcard form {
   display: none;
   background-color: white;
@@ -495,10 +502,9 @@ footer nav ul li a {
   margin-top: 10px;
 }
 .money .material-symbols-outlined {
-  position: absolute;
-  top: 190px;
+  position: relative;
+  top: 30px;
   left: 65px;
-  width: 25px;
 }
 .money h3 {
   color: gray;

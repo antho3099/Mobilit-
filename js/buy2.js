@@ -11,7 +11,7 @@ let bills = document.querySelector('.bills');
 let header3 = document.querySelector('.headerforbuy');
 let backup = document.querySelector(".twospans")
 let paid = document.querySelector("#paid");
-let cost = 1.20;
+let cost = 1.20;    
 let tencost = 9.00;
 let moneylot = document.querySelector("#tips");
 let lotofmoney = document.querySelector(".lot");
@@ -20,6 +20,14 @@ let cash = document.querySelector("#cashone");
 let rich = document.querySelector("#rich")
 let oppay = document.querySelector(".cash")
 let mont = document.querySelector("#gold")
+let one = "1 Voyage Aix en Bus";
+let ten = "10 Voyages Aix "
+let info = document.querySelector("#info1");
+let info2 = document.querySelector("#info2");
+let inforesult = document.querySelector("#inforesult");
+
+
+
 
 btnMore.addEventListener('click', function(){
     result = ++incrementation ;
@@ -27,17 +35,20 @@ btnMore.addEventListener('click', function(){
     bought.style.display = "block";
     let total = incrementation * cost;
     moneylot = total;
-    cash.innerText = moneylot;
+    cash.innerText = moneylot.toFixed(2);
     oppay.style.display = 'block';
+    inforesult.innerHTML = one;
+    travel.innerHTML = one;
+
 })
 btnLess.addEventListener('click', function(){
     result = --incrementation;
         count.innerHTML = result;
-        bought.style.display = "none";
+       // bought.style.display = "none";
         let total = incrementation * cost;
         moneylot = total;
-        cash.innerText = moneylot;
-        oppay.style.display = "none";
+        // oppay.style.display = "none";
+        cash.innerText = moneylot.toFixed(2);
 })
 btnMore2.addEventListener('click', function(){
     result = ++incrementation ;
@@ -45,8 +56,11 @@ btnMore2.addEventListener('click', function(){
     bought.style.display = "block";
     let total = incrementation * tencost;
     moneylot = total;
-    cash.innerText = moneylot;
+    cash.innerText = moneylot.toFixed(2);
     oppay.style.display = 'block';
+    inforesult.innerHTML = ten;
+    travel.innerHTML = ten;
+
 })
 btnLess2.addEventListener('click', function(){
     result = --incrementation;
@@ -54,8 +68,9 @@ btnLess2.addEventListener('click', function(){
     bought.style.display = "none";
     let total = incrementation * tencost;
     moneylot = total;
-    cash.innerText = moneylot;
+    cash.innerText = moneylot.toFixed(2);
     oppay.style.display = "none";
+ 
 })
 bought.addEventListener('click', function(){
     shopping.style.display = "none";
@@ -64,9 +79,9 @@ bought.addEventListener('click', function(){
     header3.style.display = "block";
     bought.style.display = "none";
     paid.style.display = "block";
-    rich.innerText = moneylot;
+    rich.innerText = moneylot.toFixed(2);
     oppay.style.display = "none";
-    gold.innerText = moneylot; 
+    gold.innerText = moneylot.toFixed(2); 
 
 })
 backup.addEventListener('click', function(){

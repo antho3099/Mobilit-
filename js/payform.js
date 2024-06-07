@@ -5,12 +5,14 @@ let help = document.querySelector(".help");
 let helpnotice2 = document.querySelector("#help2");
 let help2 = document.querySelector(".helptwo")
 let end = document.querySelector(".help .croix");
-let end2 = document.querySelector(".helptwo .croix")
-let getback = document.querySelector("#return")
+let end2 = document.querySelector(".helptwo .croix");
+let getback = document.querySelector("#return");
+let accepted = document.querySelector(".accepted");
+let off = document.querySelector("#close");
+let validate = document.querySelector("#valider");
 
 
-function menuofcard(ev){
-    ev.preventDefault()
+function menuofcard(){
     bow.style.transform = "rotate(0.2turn)";
     payform.classList.toggle("display"); 
 }  
@@ -48,4 +50,15 @@ getback.addEventListener("click", function(){{
     header4.style.display = "none";
     payment.style.display = "none";
 }})
-
+validate.addEventListener('click', function(){
+    payform.style.display = "none";
+    header4.style.display = "none";
+    payment.style.display = "none";
+    header3.style.display = "block";
+    footer.style.display = "none";
+    notice.style.display = "none";
+    header1.style.display = "none";
+    shop.style.display = "none";
+    accepted.style.display = "block";
+    off.style.display = "block";
+})
