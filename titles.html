@@ -15,6 +15,7 @@
     <script src="js/check.js" defer></script>
     <script src="js/language.js" defer></script>
     <script src="js/accepted.js" defer></script>
+    <script src="js/time.js" defer></script>
 </head>
 <body>
     <!--On Crée plusieurs headers-->
@@ -64,8 +65,10 @@
     <div class="card">
         <h3>SUR MON TELEPHONE</h3>
         <img src="img/card.avif" alt="">
+        <div id="timer"></div>
         <h4><span id="travel"></span></h4>
         <p><span id="numbercard"></span></p>
+        <p>Valable 60 minutes</p>
     </div>
     <!--Achats-->
     <div class="addticket">
@@ -132,6 +135,7 @@
         </div>
         <div class="minbill">
             <p><span id="inforesult"></span></p>
+            <p><span id="quantity"></span></p>
         </div>
         <form action="titles.html">
             <input type="checkbox" id="checkbox" name="checkbox">
@@ -217,6 +221,12 @@
         <p>Retrouvez vos titres dans votre compte et utilisez-les pour voyager facilement</p>
     </div>
     <button id="close">Fermer</button>
+
+    <div class="menu">
+        <h2><span id="traveldescription"></span></h2>
+        <h3><span id="travelnumber"></span></h3>
+        
+    </div>
     <!--On fait le footer qui sera une nav-->
     <footer>
         <nav>

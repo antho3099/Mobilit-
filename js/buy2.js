@@ -25,8 +25,7 @@ let ten = "10 Voyages Aix "
 let info = document.querySelector("#info1");
 let info2 = document.querySelector("#info2");
 let inforesult = document.querySelector("#inforesult");
-
-
+let quantity = document.querySelector("#quantity");
 
 
 btnMore.addEventListener('click', function(){
@@ -39,16 +38,38 @@ btnMore.addEventListener('click', function(){
     oppay.style.display = 'block';
     inforesult.innerHTML = one;
     travel.innerHTML = one;
-
+    quantity.innerText = "x" + result;
+    if(result == 0){
+        bought.style.display = "none";
+        oppay.style.display = "none";
+    }
+    else if(result < 0){
+        bought.style.display = "none";
+        oppay.style.display = "none";
+    }
+    else{
+        bought.style.display = "block";
+        oppay.style.display = "block";
+    }
 })
 btnLess.addEventListener('click', function(){
     result = --incrementation;
-        count.innerHTML = result;
-       // bought.style.display = "none";
-        let total = incrementation * cost;
-        moneylot = total;
-        // oppay.style.display = "none";
-        cash.innerText = moneylot.toFixed(2);
+    count.innerHTML = result;
+    let total = incrementation * cost;
+    moneylot = total;
+    cash.innerText = moneylot.toFixed(2);
+    if(result == 0){
+        bought.style.display = "none";
+        oppay.style.display = "none";
+    }
+    else if(result < 0){
+        bought.style.display = "none";
+        oppay.style.display = "none";
+    }
+    else{
+        bought.style.display = "block";
+        oppay.style.display = "block";
+    }
 })
 btnMore2.addEventListener('click', function(){
     result = ++incrementation ;
@@ -60,17 +81,39 @@ btnMore2.addEventListener('click', function(){
     oppay.style.display = 'block';
     inforesult.innerHTML = ten;
     travel.innerHTML = ten;
+    quantity.innerText = "x" + result;
+    if(result == 0){
+        bought.style.display = "none";
+        oppay.style.display = "none";
+    }
+    else if(result < 0){
+        bought.style.display = "none";
+        oppay.style.display = "none";
+    }
+    else{
+        bought.style.display = "block";
+        oppay.style.display = "block";
+    }
 
 })
 btnLess2.addEventListener('click', function(){
     result = --incrementation;
     count2.innerHTML = result;
-    bought.style.display = "none";
     let total = incrementation * tencost;
     moneylot = total;
     cash.innerText = moneylot.toFixed(2);
-    oppay.style.display = "none";
- 
+    if(result == 0){
+        bought.style.display = "none";
+        oppay.style.display = "none";
+    }
+    else if(result < 0){
+        bought.style.display = "none";
+        oppay.style.display = "none";
+    }
+    else{
+        bought.style.display = "block";
+        oppay.style.display = "block";
+    }
 })
 bought.addEventListener('click', function(){
     shopping.style.display = "none";
