@@ -10,6 +10,11 @@ let getback = document.querySelector("#return");
 let accepted = document.querySelector(".accepted");
 let off = document.querySelector("#close");
 let validate = document.querySelector("#valider");
+let form = document.querySelector("form");
+let cardinput = document.querySelector("#cardnumber");
+let inputdate = document.querySelector("#datenumber");
+let dating = document.querySelector("#date");
+let cryptoinput = document.querySelector("#crypto");
 
 
 function menuofcard(){
@@ -51,6 +56,7 @@ getback.addEventListener("click", function(){{
     payment.style.display = "none";
 }})
 validate.addEventListener('click', function(){
+
     payform.style.display = "none";
     header4.style.display = "none";
     payment.style.display = "none";
@@ -61,4 +67,5 @@ validate.addEventListener('click', function(){
     shop.style.display = "none";
     accepted.style.display = "block";
     off.style.display = "block";
+
 })

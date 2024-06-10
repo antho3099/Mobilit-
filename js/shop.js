@@ -27,6 +27,7 @@ function back(){
     header1.style.display = "block";
     shop.style.display = "block";
     buy.style.display = "none"
+    localStorage.setItem("ticket", "none")
 }
 stop.addEventListener('click', back);
 

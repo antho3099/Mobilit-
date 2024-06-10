@@ -4,10 +4,33 @@
     justify-content:center;
     align-items: center;
     position:relative;
-    top:330px;
+    top:250px;
 }
 footer img{
     position:absolute;
     bottom:0;
     left:100px;
+}
+
+#dino{
+    display:block;
+    width:70px;
+    position:relative;
+    left:24px;
+}
+.internet{
+    position:relative;
+    top:180px;
+    display:none;
+}
+.internet h2{
+    font-size:22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left:15px;
+    font-weight: 500;
+}
+.internet p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:100;
+    margin-left:15px;
 }

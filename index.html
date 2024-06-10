@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Métropole</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/error.js" defer></script>
     <script>
         function redirect(){
             document.location.href = "../titles.html";
@@ -12,8 +13,13 @@
         </script>
 </head>
 <body onload="setTimeout('redirect()', 2000)">
-    <!--On applique l'image pour la 1er page-->
+    <!--On applique l'image pour la 1er page -->
     <img class="metropole" src="img/metropole.webp" alt="">
+    <div class="internet">
+        <img  id="dino" src="img/dino.webp" alt="">
+        <h2>Impossible de se connecter à Internet</h2>
+        <p>Cette page internet ne peut pas s'afficher dans Google Chrome car votre ordinateur n'est pas connecté à internet.</p>
+    </div>
     <footer>
         <img class="footerimg" src="img/footerimg.webp" alt="">
     </footer>

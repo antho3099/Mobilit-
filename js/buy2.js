@@ -26,6 +26,7 @@ let info = document.querySelector("#info1");
 let info2 = document.querySelector("#info2");
 let inforesult = document.querySelector("#inforesult");
 let quantity = document.querySelector("#quantity");
+let mininfo = document.querySelector("#travelnumber");
 
 
 btnMore.addEventListener('click', function(){
@@ -39,6 +40,13 @@ btnMore.addEventListener('click', function(){
     inforesult.innerHTML = one;
     travel.innerHTML = one;
     quantity.innerText = "x" + result;
+    description.innerText = one;
+    if(result == 1){
+        mindescription.innerText = result + " Voyage disponible";
+    }
+    else if(result > 1){
+        mindescription.innerText = result + " Voyages disponible";
+    }
     if(result == 0){
         bought.style.display = "none";
         oppay.style.display = "none";
@@ -58,6 +66,12 @@ btnLess.addEventListener('click', function(){
     let total = incrementation * cost;
     moneylot = total;
     cash.innerText = moneylot.toFixed(2);
+    if(result == 1){
+        mindescription.innerText = result + " Voyage disponible";
+    }
+    else if(result > 1){
+        mindescription.innerText = result + " Voyages disponible";
+    }
     if(result == 0){
         bought.style.display = "none";
         oppay.style.display = "none";
@@ -82,6 +96,13 @@ btnMore2.addEventListener('click', function(){
     inforesult.innerHTML = ten;
     travel.innerHTML = ten;
     quantity.innerText = "x" + result;
+    description.innerText = ten;
+    if(result == 1){
+        mindescription.innerText = result + " Voyage de 10 disponible";
+    }
+    else if(result > 1){
+        mindescription.innerText = result + " Voyages de 10 disponible";
+    }
     if(result == 0){
         bought.style.display = "none";
         oppay.style.display = "none";
@@ -102,6 +123,14 @@ btnLess2.addEventListener('click', function(){
     let total = incrementation * tencost;
     moneylot = total;
     cash.innerText = moneylot.toFixed(2);
+
+    if(result == 1){
+        mindescription.innerText = result + " Voyage de 10 disponible";
+    }
+    else if(result > 1){
+        mindescription.innerText = result + " Voyages de 10 disponible";
+    }
+
     if(result == 0){
         bought.style.display = "none";
         oppay.style.display = "none";
@@ -115,6 +144,7 @@ btnLess2.addEventListener('click', function(){
         oppay.style.display = "block";
     }
 })
+
 bought.addEventListener('click', function(){
     shopping.style.display = "none";
     bills.style.display = "block";
@@ -124,7 +154,12 @@ bought.addEventListener('click', function(){
     paid.style.display = "block";
     rich.innerText = moneylot.toFixed(2);
     oppay.style.display = "none";
-    gold.innerText = moneylot.toFixed(2); 
+    gold.innerText = moneylot.toFixed(2);
+    localStorage.setItem("price", moneylot.toFixed(2));
+    localStorage.setItem("Number", result);
+    localStorage.setItem("description", mininfo);
+
+
 
 })
 backup.addEventListener('click', function(){
@@ -134,4 +169,7 @@ backup.addEventListener('click', function(){
     header3.style.display = "none";
     bought.style.display = "block";
     paid.style.display = "none";
-})
+    localStorage.removeItem("price");
+    localStorage.removeItem("Number");
+    localStorage.removeItem("description");
+});

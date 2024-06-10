@@ -16,6 +16,7 @@
     <script src="js/language.js" defer></script>
     <script src="js/accepted.js" defer></script>
     <script src="js/time.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </head>
 <body>
     <!--On Crée plusieurs headers-->
@@ -64,8 +65,8 @@
     <!--La suite, on affiche la carte avec une div-->
     <div class="card">
         <h3>SUR MON TELEPHONE</h3>
-        <img src="img/card.avif" alt="">
-        <div id="timer"></div>
+        <img id="ticket" src="img/card.avif" alt="">
+        <div id="timer">60:00</div>
         <h4><span id="travel"></span></h4>
         <p><span id="numbercard"></span></p>
         <p>Valable 60 minutes</p>
@@ -174,10 +175,10 @@
             <span class="material-symbols-outlined">credit_card</span>
             <span id="help" class="material-symbols-outlined">help</span> <br>
             <label id="datecard" for="date">Expire fin</label> <br>
-            <input type="number" id="date" name="month" placeholder="mois">
-            <input type="number" id="date" name="year" placeholder="Année"> <br>
+            <input type="number" id="date" name="month" placeholder="mois" required>
+            <input type="number" id="date" name="year" placeholder="Année" required> <br>
             <label id="crypt" for="crypto">Cryptogramme </label><br>
-            <input type="text" id="crypto" name="crypto">
+            <input type="text" id="crypto" name="crypto" required>
             <span id="help2" class="material-symbols-outlined">help</span> <br>
             <input value="Valider" id="valider" name="valider">
             <div class="cardlist">
@@ -221,11 +222,19 @@
         <p>Retrouvez vos titres dans votre compte et utilisez-les pour voyager facilement</p>
     </div>
     <button id="close">Fermer</button>
-
-    <div class="menu">
+    <!--On fait un deuxième menu-->
+    <div class="secondmenu">
         <h2><span id="traveldescription"></span></h2>
         <h3><span id="travelnumber"></span></h3>
-        
+        <div class="transport">
+            <h2>Vous utilisez</h2>
+            <div class="check">
+                <label for="checkbox">Le Bus</label>
+            <input type="checkbox" id="checkbox"> 
+            </div>
+            <button id="use">Utiliser</button>
+        </div>
+
     </div>
     <!--On fait le footer qui sera une nav-->
     <footer>
