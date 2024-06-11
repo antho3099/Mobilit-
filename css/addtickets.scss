@@ -1,5 +1,6 @@
 .addticket{
     display:none;
+    width:100%;
     .add1{
         margin-top:15px;
         display:flex;
@@ -69,4 +70,71 @@
        text-align: end;
        margin-right:90px; 
        display:none;
+}
+@media screen and (max-width: 600px){
+    .addticket{
+        .add1{
+            img{
+                width:45px;
+                height:55px;
+            }
+            span{
+                margin-left:14px;
+                display:flex;
+                flex-direction: column;
+                margin-top:9px;
+            }
+            h3{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size:19px;
+                width:135px;
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+            p{
+                font-size:14px;
+            }
+            .buy{
+                position:absolute;
+                left:135px;
+                .count{
+                    position:relative;
+                    bottom:7px;
+                }
+            }
+            
+            .cost{
+                margin-left:125px;
+            }
+        }
+        
     }
+    .add2{
+        margin-top:15px;
+        display:flex;
+        border-bottom:1px solid gray;
+        padding-bottom:30px;
+        img{
+            width:45px;
+            height:55px;
+        }
+        span{
+            margin-left:14px;
+            display:flex;
+            flex-direction: column;
+            margin-top:9px;
+        }
+        h3{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size:18px;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+        p{
+            font-size:12px;
+        }
+        .cost{
+            margin-right:5px;
+        }
+    }
+}

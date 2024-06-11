@@ -28,3 +28,14 @@
         }
     }
 }
+@media screen and (max-width:600px){
+    .cardlist{
+        ul{
+            li{
+                img{
+                    width:120px;
+                }
+            }
+        }
+    }
+}
