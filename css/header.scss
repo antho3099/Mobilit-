@@ -46,3 +46,15 @@ header{
     }
     
 }
+@media screen and (max-width: 600px){
+    header{
+        .headerone{
+            h1{
+                font-size:20px;
+            }
+            .menu{
+                left:350px;
+            }
+        }
+    }
+}

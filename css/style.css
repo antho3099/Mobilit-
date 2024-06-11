@@ -44,6 +44,14 @@ header .headerone .menu .rond3 {
   bottom: 15px;
 }
 
+@media screen and (max-width: 600px) {
+  header .headerone h1 {
+    font-size: 20px;
+  }
+  header .headerone .menu {
+    left: 350px;
+  }
+}
 .headertwo {
   display: none;
 }
@@ -388,6 +396,11 @@ footer nav ul li a {
   font-size: 17px;
 }
 
+@media screen and (max-width: 600px) {
+  .none .nope {
+    margin-top: 150px;
+  }
+}
 .headercard {
   display: none;
 }
