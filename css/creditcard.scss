@@ -100,35 +100,3 @@
         }
     }
 }
-@media screen and (max-width: 600px){
-    .creditcard{
-        .language{ 
-            position:absolute;
-            top:100px;
-            left:290px;
-            h3{
-                border:1px solid black;
-                color:white;
-                background-color: black;
-                padding:20px;
-            }
-        }
-        .menulanguage{
-            text-align: center;
-            ul{
-                li{
-                    position:relative;
-                    background-color: black;
-                    color:white;
-                    width:90px;
-                    margin-left:280px;
-                    list-style: none;
-                    display:none;
-                }
-            }
-            .display{
-                display:block;
-            }
-        }
-    }
-}

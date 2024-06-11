@@ -44,15 +44,6 @@ header .headerone .menu .rond3 {
   bottom: 15px;
 }
 
-@media screen and (max-width: 600px) {
-  header .headerone h1 {
-    font-size: 20px;
-    font-weight: 500;
-  }
-  header .headerone .menu {
-    left: 340px;
-  }
-}
 .headertwo {
   display: none;
 }
@@ -100,16 +91,6 @@ header .headerone .menu .rond3 {
   bottom: 15px;
 }
 
-@media screen and (max-width: 600px) {
-  .headertwo h2 {
-    text-align: center;
-    margin-left: 125px;
-  }
-  .headertwo .menu {
-    position: absolute;
-    left: 345px;
-  }
-}
 footer {
   background-color: white;
   border-top: 1px solid gray;
@@ -173,11 +154,6 @@ footer nav ul li a {
   left: 170px;
 }
 
-@media screen and (max-width: 600px) {
-  .headerforbuy h2 {
-    left: 135px;
-  }
-}
 .card {
   display: none;
 }
@@ -280,67 +256,6 @@ footer nav ul li a {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .addticket .add1 img {
-    width: 45px;
-    height: 55px;
-  }
-  .addticket .add1 span {
-    margin-left: 14px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 9px;
-  }
-  .addticket .add1 h3 {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    font-size: 19px;
-    width: 135px;
-    font-weight: 100;
-    text-transform: uppercase;
-  }
-  .addticket .add1 p {
-    font-size: 14px;
-  }
-  .addticket .add1 .buy {
-    position: absolute;
-    left: 135px;
-  }
-  .addticket .add1 .buy .count {
-    position: relative;
-    bottom: 7px;
-  }
-  .addticket .add1 .cost {
-    margin-left: 125px;
-  }
-  .add2 {
-    margin-top: 15px;
-    display: flex;
-    border-bottom: 1px solid gray;
-    padding-bottom: 30px;
-  }
-  .add2 img {
-    width: 45px;
-    height: 55px;
-  }
-  .add2 span {
-    margin-left: 14px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 9px;
-  }
-  .add2 h3 {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 100;
-    text-transform: uppercase;
-  }
-  .add2 p {
-    font-size: 12px;
-  }
-  .add2 .cost {
-    margin-right: 5px;
-  }
-}
 .low {
   border: 1px solid black;
   width: 30px;
@@ -474,17 +389,6 @@ footer nav ul li a {
   font-size: 17px;
 }
 
-@media screen and (max-width: 600px) {
-  .none .nope {
-    margin-top: 150px;
-  }
-  .none p {
-    font-size: 14px;
-  }
-  .letadd {
-    margin-top: 15px;
-  }
-}
 .headercard {
   display: none;
 }
@@ -593,34 +497,6 @@ footer nav ul li a {
   width: 210px;
 }
 
-@media screen and (max-width: 600px) {
-  .creditcard .language {
-    position: absolute;
-    top: 100px;
-    left: 290px;
-  }
-  .creditcard .language h3 {
-    border: 1px solid black;
-    color: white;
-    background-color: black;
-    padding: 20px;
-  }
-  .creditcard .menulanguage {
-    text-align: center;
-  }
-  .creditcard .menulanguage ul li {
-    position: relative;
-    background-color: black;
-    color: white;
-    width: 90px;
-    margin-left: 280px;
-    list-style: none;
-    display: none;
-  }
-  .creditcard .menulanguage .display {
-    display: block;
-  }
-}
 .money {
   background-color: white;
   padding: 10px;
@@ -650,11 +526,6 @@ footer nav ul li a {
   width: 140px;
 }
 
-@media screen and (max-width: 600px) {
-  .cardlist ul li img {
-    width: 120px;
-  }
-}
 .bills {
   display: none;
 }
@@ -686,11 +557,6 @@ footer nav ul li a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-@media screen and (max-width: 600px) {
-  form {
-    margin-right: 2px;
-  }
-}
 #paid {
   position: relative;
   top: 95px;
@@ -740,13 +606,6 @@ footer nav ul li a {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .accepted img {
-    display: block;
-    margin: auto;
-    margin-top: 22px;
-  }
-}
 .help {
   background-color: white;
   position: fixed;
@@ -869,15 +728,6 @@ footer nav ul li a {
   top: 250px;
 }
 
-@media screen and (max-width: 600px) {
-  #timer {
-    position: absolute;
-    right: 39px;
-    top: 245px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-}
 .secondmenu {
   background-color: white;
   position: absolute;
@@ -940,68 +790,6 @@ footer nav ul li a {
   width: 25px;
 }
 
-@media screen and (max-width: 600px) {
-  .secondmenu {
-    background-color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 300px;
-    border-top: 2px solid gray;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    display: none;
-  }
-  .secondmenu h2 {
-    margin-left: 30px;
-    margin-top: 5px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 20px;
-  }
-  .secondmenu h3 {
-    margin-left: 30px;
-    margin-top: 5px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    font-weight: 100;
-    font-size: 17px;
-  }
-  .display {
-    display: block;
-  }
-  .transport {
-    text-align: start;
-    margin-left: 6px;
-  }
-  .transport #use {
-    text-align: center;
-    background-color: rgb(247, 122, 77);
-    width: 320px;
-    height: 45px;
-    border-radius: 6px;
-    position: relative;
-    top: 70px;
-    left: 30px;
-  }
-  .check {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 6px;
-    width: 360px;
-    height: 30px;
-    background-color: rgb(212, 212, 212);
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  }
-  .check label {
-    margin-top: 5px;
-  }
-  .check input {
-    width: 25px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
